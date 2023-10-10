@@ -31,7 +31,7 @@
         // Un tableau qui définit la structure du menu
         $mymenu = array(
             // idPage titre
-            'index' => array('Accueil'),
+            'accueil' => array('Accueil'),
             'cv' => array('Expériences'),
             'hobbies' => array('À propos de moi'),
             'contact' => array('Contacts'),
@@ -44,7 +44,7 @@
         echo '<div class="menu">';
         foreach ($mymenu as $pageId => $pageParameters) {
             $currentClass = ($pageId === $currentPageId) ? ' id="currentPage"' : ''; // Ajout de la classe 'id="currentPage"' pour la page courante
-            echo '<a' . $currentClass . ' href="' . $pageId . '.php">' . $pageParameters[0] . '</a>';
+            echo '<a' . $currentClass . ' href="index.php?page=' . $pageId . '">' . $pageParameters[0] . '</a>';
         }
         echo '</div>';
         echo '</nav>';

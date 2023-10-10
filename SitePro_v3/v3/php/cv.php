@@ -1,10 +1,5 @@
 
-<?php
-require_once('template_header.php');
-renderMenuToHTML('cv');
-getCss('cv');
-//renderPageTitle('Expériences');
-?>
+
 <main>
     <div>
         <h4> Mes projets </h4>
@@ -41,8 +36,4 @@ getCss('cv');
         <!--Pensez à mettre des balises section ici pour découper en section :) -->
     </div>
 </main>
-<?php
-require_once('template_footer.php');
-?>
-</body>
-</html>
+

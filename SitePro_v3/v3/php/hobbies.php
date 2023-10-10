@@ -1,9 +1,4 @@
 
-<?php
-require_once('template_header.php');
-renderMenuToHTML('hobbies');
-//renderPageTitle('A propos de moi');
-?>
 <main>
 <h3> Mes centres d'intérêt</h3>
 <div class="hobbiesContainer">
@@ -24,8 +19,4 @@ renderMenuToHTML('hobbies');
     </ul>
 </div>
 </main>
-<?php
-require_once('template_footer.php');
-?>
-</body>
-</html>
+

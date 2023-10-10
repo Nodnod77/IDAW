@@ -1,10 +1,3 @@
-
-<?php
-require_once('template_header.php');
-renderMenuToHTML('index');
-//renderPageTitle('Accueil');
-getTitle ('index')
-?>
 <main>
     <div class="homeDiv">
         <h1>Bien le bonjour !</h1>
@@ -14,9 +7,4 @@ getTitle ('index')
         </div>
     </div>
 </main>
-<?php
-require_once('template_footer.php');
-?>
-</body>
 
-</html>
