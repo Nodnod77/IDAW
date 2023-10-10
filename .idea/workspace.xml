@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="713c9094-7a36-46b0-a885-44e16898c42d" name="Changes" comment="Commit test">
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/1erProgrammePHP/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/dessinImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/imageKarate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/jeuVideoImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/langueImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/css/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/css/cv.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/css/hobbies.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/html/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/html/cv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/html/hobbies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP2_PHP/SitePro_v2/v2/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/html/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v1/v1/html/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/html/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v1/v1/html/cv.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="TP1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WW7zq8kNPLub2kbh1tcpoFyh8G" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showModules" value="false" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/IDAW/TP2_PHP&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IDAW\TP2_PHP" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IDAW\SitePro_v1" />
+      <recent name="C:\wamp64\www\IDAW\SitePro_v1\v1\html" />
+      <recent name="C:\wamp64\www\IDAW\SitePro_v1\v1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IDAW/TP2_PHP/1erProgrammePHP/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="713c9094-7a36-46b0-a885-44e16898c42d" name="Changes" comment="" />
+      <created>1696836748344</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696836748344</updated>
+      <workItem from="1696836750605" duration="5254000" />
+      <workItem from="1696842911995" duration="14258000" />
+      <workItem from="1696921705335" duration="1236000" />
+      <workItem from="1696922970614" duration="2398000" />
+    </task>
+    <task id="LOCAL-00001" summary="Premier commit Hello World">
+      <created>1696837348675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696837348675</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Deuxième commit TP1">
+      <created>1696838570479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696838570479</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Troisième commit TP1">
+      <created>1696838854439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696838854439</updated>
+    </task>
+    <task id="LOCAL-00004" summary="TP1">
+      <created>1696840933147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696840933147</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit test">
+      <created>1696841771260</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696841771260</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit test">
+      <created>1696841788341</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696841788341</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit test">
+      <created>1696842198804</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696842198804</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Premier commit Hello World" />
+    <MESSAGE value="Deuxième commit TP1" />
+    <MESSAGE value="Troisième commit TP1" />
+    <MESSAGE value="TP1" />
+    <MESSAGE value="Commit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit test" />
+  </component>
+</project>
