@@ -22,6 +22,7 @@
             left:40%;
             top:100%;
             padding-top: 200px;
+            width: fit-content;
 
         }
         .table{

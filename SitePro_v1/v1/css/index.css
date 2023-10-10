@@ -27,13 +27,13 @@ menu>a{
 }
 .signature {
   display: flex;
-    align-items: center;
-    font-style: italic;
-    font-size: small;
-    position: relative;
-    left:40%;
-    top:60%;
-
+  align-items: center;
+  font-style: italic;
+  font-size: small;
+  position: relative;
+  left:40%;
+  top:60%;
+  width: fit-content;
 }
 
 .footerContent{
