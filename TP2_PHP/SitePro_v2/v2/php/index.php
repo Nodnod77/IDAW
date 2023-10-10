@@ -3,7 +3,7 @@
 require_once('template_header.php');
 renderMenuToHTML('index');
 //renderPageTitle('Accueil');
-getTitle ('index')
+//getTitle ('index')
 ?>
 <main>
     <div class="homeDiv">
