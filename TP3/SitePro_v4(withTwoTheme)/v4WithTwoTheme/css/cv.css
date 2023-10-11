@@ -1,0 +1,25 @@
+
+
+
+.stage > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) {
+    color: #5a5ad0;
+}
+
+.stage > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) {
+    color: #5a5ad0;
+}
+.stage > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) {
+    color:#5a5ad0;
+}
+
+.formations > ul:nth-child(2) > li:nth-child(1) {
+    color: #5a5ad0;
+}
+
+
+.formations > ul:nth-child(2) > li:nth-child(2) {
+    color: #5a5ad0;
+}
+.initiationTechnique{
+    margin-bottom: 100px;
+}

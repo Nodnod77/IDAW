@@ -13,6 +13,7 @@ renderMenuToHTML($currentPageId);
 getCss($currentPageId)
 ?>
 <section class="corps">
+
     <?php
     $pageToInclude = $currentPageId . ".php";
     if(is_readable($pageToInclude))
@@ -20,6 +21,7 @@ getCss($currentPageId)
     else
         require_once("error.php");
     ?>
+
 </section>
 <?php
 

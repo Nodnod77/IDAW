@@ -1,0 +1,124 @@
+
+
+header, footer {
+    background-color: #5a5ad0;
+    /*color: aliceblue;*/
+    padding: 20px;
+    padding: 10px 30px 10px;
+    margin-left:-20px;
+    border-radius: 5px;
+    width: 100%; /* Pour étendre sur toute la largeur */
+}
+
+footer{
+    margin-left: -35px;
+    padding: 50px;
+
+}
+menu>a{
+    border: darkblue medium;
+}
+
+.footerContent,nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*aligne sur l'axe verticale*/
+    justify-content: space-between; /* élément tiré sur tout l'axe  avec espace entre eux*/
+}
+.signature {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: small;
+    position: relative;
+    left:40%;
+    top:100%;
+    width: fit-content;
+
+}
+
+.footerContent{
+    padding-left: 20px;
+    padding-right: 120px;
+}
+li{
+    color: darkblue;
+}
+/* Ajoutez une marge au lien dans le menu */
+#mainMenu>li>a {
+    margin-left: 0; /* pas de marge gauche précédente */
+}
+main{
+    height: max-content;
+    margin: 150px 100px 100px;
+}
+.homeDiv{
+    display: block;
+    align-content: initial;
+    position: relative;
+    left: 33%;
+}
+.APropos>h6:nth-child(1){
+    color: #1F2039;
+    font-size: large;
+    font-style: italic;
+    padding: 20px;
+}
+div.menu {
+    margin-right: 40px;
+}
+/* Ajout un espace entre le logo et le menu */
+nav.menu img {
+    margin-right: 10px;
+}
+#currentPage {
+    margin: 10px;
+    border: 10px #fad7d7;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color:#1F2039;
+    color: #F9F8FF;
+    margin:30px;
+    padding-bottom: 30px;
+}
+
+.menu>a{
+    margin: 10px;
+    border: 10px #fad7d7;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+#currentPage{
+    background-color:aliceblue ;
+    text-decoration-color: darkblue ;
+}
+
+a:hover{
+    background-color:aliceblue ;
+    text-decoration: underline;
+    text-decoration-color: darkblue ;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+.menuFooter > ul:nth-child(1) > li:nth-child(1) > a ,.menuFooter > ul:nth-child(1) > li:nth-child(2) > a ,.menuFooter > ul:nth-child(1) > li:nth-child(3) > a ,.menuFooter > ul:nth-child(1) > li:nth-child(4) > a {
+    border: 10px #fad7d7;
+    border-radius: 8px;
+    padding: 4px 10px;
+    margin: 30px 10px;
+}
+
+.userLogo{
+    width: 100px;
+}
