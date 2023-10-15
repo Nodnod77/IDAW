@@ -1,0 +1,25 @@
+img {
+    width: 150px;
+}
+li{
+    color: cornflowerblue;
+}
+.langueVideoGamesContainer,.dessinKarateContainer{
+    display: flex;
+    flex-direction: row;
+}
+.oneHobby{
+    padding-left : 100px;
+    padding-top: 30px;
+
+}
+img {
+    padding: 15px;
+}
+.karateImg, .jeuVideoImg{
+    width: 400px;
+    border-radius: 30px;
+}
+.langueImg{
+    margin-top: 50px;
+}

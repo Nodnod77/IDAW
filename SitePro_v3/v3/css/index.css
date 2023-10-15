@@ -50,7 +50,7 @@ li{
 }
 main{
     height: max-content;
-    margin: 150px 100px 100px;
+    margin: 60px 100px 100px;
 }
 .homeDiv{
     display: block;
@@ -121,4 +121,27 @@ a {
 
 .userLogo{
     width: 100px;
+}
+
+/* Stylisation du formulaire de sélection de la langue */
+.lang-form {
+
+    padding: 10px;
+    color: white; /* Texte en couleur claire */
+    border-radius: 20px;
+    width: fit-content;
+}
+
+/* Stylisation du sélecteur de langue */
+.langSelect {
+    width: fit-content;
+    background-color: #1F2039; /* Fond blanc */
+    color: white; /* Texte en couleur bleue */
+    border: none;
+    align-items: end;
+    padding: 5px;
+    border-radius: 25px;
+    /*position: relative;
+    left: 1300%;
+    top: 20%;*/
 }
