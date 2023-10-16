@@ -6,11 +6,11 @@ $currentPageId = 'accueil';
 if(isset($_GET['page'])) {
     $currentPageId = $_GET['page'];
 }
-session_start();
+/*session_start();
 //if (isset($_GET(['disconnect'])) pr disconnect
 if (isset($_SESSION['login'])){
 
-}
+}*/
 ?>
 
 <?php
