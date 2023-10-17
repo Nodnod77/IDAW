@@ -13,7 +13,7 @@ try {
 } catch (PDOException $erreur) {
     echo 'Erreur : ' . $erreur->getMessage();
 }
-
+// mon code se repète trop, -> penser à faire des fonctions d'affichage
 // Action de Création (Create)
 if (isset($_POST['create'])) { // create est le name='create' du <button>
     $name = $_POST['name']; // name est le name ='name' de l'<input> email
@@ -24,11 +24,12 @@ if (isset($_POST['create'])) { // create est le name='create' du <button>
 
 // Action de Mise à jour (Update)
 if (isset($_POST['update'])) {
+
     $userId = $_POST['user_id'];
     $name = $_POST['new_name'];
     $email = $_POST['new_email'];
-    $update = $pdo->prepare("UPDATE user SET name = ?, email = ? WHERE id = ?");
-    $update->execute([$name, $email, $userId]);
+    $update = $pdo->prepare("UPDATE user SET name = ?, email = ? WHERE id = ?"); // ? marque le paramètre qui est mis après dans execute
+    $update->execute([$name, $email, $userId]); // ne pas oublier de passer les paramètres
 }
 
 // Action de Suppression (Delete)
@@ -40,6 +41,14 @@ if (isset($_POST['delete'])) {
 
 $request = $pdo->prepare("SELECT * FROM user");
 $request->execute();
+/*
+Le mode PDO::FETCH_OBJ est l'une des constantes possibles que vous pouvez utiliser avec la méthode fetchAll() de PDO
+ pour spécifier comment vous souhaitez que les résultats de votre requête soient récupérés.
+
+Lorsque vous utilisez PDO::FETCH_OBJ, cela signifie que vous récupérez chaque ligne de résultat sous forme d'objet.
+ Chaque colonne de la ligne est représentée en tant que propriété de cet objet, où le nom de la propriété correspond au
+ nom de la colonne dans le résultat de la requête.
+*/
 $users = $request->fetchAll(PDO::FETCH_OBJ);
 ?>
 
@@ -68,7 +77,8 @@ $users = $request->fetchAll(PDO::FETCH_OBJ);
         <th>ID</th>
         <th>Nom</th>
         <th>Email</th>
-        <th>Actions</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
     </tr>
     <?php foreach ($users as $user) { ?>
         <tr>
@@ -81,8 +91,14 @@ $users = $request->fetchAll(PDO::FETCH_OBJ);
                     <input type="text" name="new_name" placeholder="Nouveau nom" required>
                     <input type="email" name="new_email" placeholder="Nouveau email" required>
                     <button type="submit" name="update">Modifier</button>
+                </form>
+            </td>
+            <td>
+                <form method="POST">
+                    <input type="hidden" name="user_id" value="<?php echo $user->id; ?>">
                     <button type="submit" name="delete">Supprimer</button>
                 </form>
+
             </td>
         </tr>
     <?php } ?>
