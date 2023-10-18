@@ -6,16 +6,19 @@ require_once('config.php'); // faire a la place un require_once(init_pdo dans le
 header("Access-Control-Allow-Origin: *");// * veut dire que les domaine peuvent acceder à l'API elle est public
 header("Content-Type: application/json; charset=UTF-8");
 
+
+
+if($_SERVER['REQUEST_METHOD'] === 'GET' || 'POST' || 'PUT' || 'DELETE') {
+    // Établir la connexion à la base de données
+    $pdo = new PDO("mysql:host=" . _MYSQL_HOST . ";dbname=" . _MYSQL_DBNAME, _MYSQL_USER, _MYSQL_PASSWORD);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
 // Fetch user by id + fetch all users
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['id'])) {
         // Endpoint GET /user.php/{id} (Récupérer un utilisateur par ID)
         $user_id = $_GET['id'];
         try {
-            // Établir la connexion à la base de données
-            $pdo = new PDO("mysql:host=" . _MYSQL_HOST . ";dbname=" . _MYSQL_DBNAME, _MYSQL_USER, _MYSQL_PASSWORD);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
             // Exécuter la requête SQL pour récupérer un utilisateur par ID
             $stmt = $pdo->prepare("SELECT * FROM user WHERE id = ?");
             $stmt->execute([$user_id]);
@@ -38,9 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     } else { // on fetch tout les user si on a pas d'id
         try {
-            // Établir la connexion à la base de données
-            $pdo = new PDO("mysql:host=" . _MYSQL_HOST . ";dbname=" . _MYSQL_DBNAME, _MYSQL_USER, _MYSQL_PASSWORD);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             // Exécuter la requête SQL pour récupérer tous les utilisateurs
             $stmt = $pdo->query("SELECT * FROM user");
@@ -67,13 +67,9 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true); // php://input est un flux PHP spécial qui permet de lire le corps de la requête HTTP POST.
 
     // Vérifier si les données nécessaires sont présentes
-    echo $data['name'], $data['email'];
+
     if (isset($data['name']) && isset($data['email'])) {
         try {
-            // Établir la connexion à la base de données
-            $pdo = new PDO("mysql:host=" . _MYSQL_HOST . ";dbname=" . _MYSQL_DBNAME, _MYSQL_USER, _MYSQL_PASSWORD);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
             // Exécuter la requête SQL pour insérer un nouvel utilisateur
             $stmt = $pdo->prepare("INSERT INTO user (name, email) VALUES (?, ?)");
             $stmt->execute([$data['name'], $data['email']]);
@@ -104,17 +100,22 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
 
         if (isset($data['user_id']) && isset($data['new_name']) && isset($data['new_email'])) {
             try {
-                // Établir la connexion à la base de données
-                $pdo = new PDO("mysql:host=" . _MYSQL_HOST . ";dbname=" . _MYSQL_DBNAME, _MYSQL_USER, _MYSQL_PASSWORD);
-                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $stmt = $pdo->prepare("SELECT * FROM user WHERE id = ?");
+                $stmt->execute([$data['user_id']]); // Utiliser un tableau pour les paramètres
+                $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-                // Exécuter la requête SQL pour mettre à jour un utilisateur
-                $stmt = $pdo->prepare("UPDATE user SET name = ?, email = ? WHERE id = ?");
-                $stmt->execute([$data['new_name'], $data['new_email'], $data['user_id']]);
-
-                // Renvoyer une réponse 200 OK
-                http_response_code(200); // OK
-                echo json_encode(['message' => 'Utilisateur ' . $data['user_id'].' mis à jour avec succès']);
+                if ($user) {
+                    // L'utilisateur a été trouvé
+                    $stmt = $pdo->prepare("UPDATE user SET name = ?, email = ? WHERE id = ?");
+                    $stmt->execute([$data['new_name'], $data['new_email'], $data['user_id']]);
+                    // Renvoyer une réponse 200 OK
+                    http_response_code(200); // OK
+                    echo json_encode(['message' => 'Utilisateur ' . $data['user_id'].' mis à jour avec succès']);
+                } else {
+                    // L'utilisateur n'a pas été trouvé
+                    http_response_code(404); // Not Found
+                    echo json_encode(['error' => 'Utilisateur ' . $data['user_id'] . ' non trouvé']);
+                }
             } catch (PDOException $erreur) {
                 // En cas d'erreur de base de données
                 http_response_code(500); // Internal Server Error
@@ -125,24 +126,33 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
             http_response_code(400); // Bad Request
             echo json_encode(['error' => 'Données manquantes']);
         }
-} elseif ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+}
+
+// suppression d'un user
+elseif ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     // Endpoint DELETE /user.php (Supprimer un utilisateur)
     $data = json_decode(file_get_contents('php://input'), true);
 
     if (isset($data['user_id'])) {
         try {
-            // Établir la connexion à la base de données
-            $pdo = new PDO("mysql:host=" . _MYSQL_HOST . ";dbname=" . _MYSQL_DBNAME, _MYSQL_USER, _MYSQL_PASSWORD);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+             $stmt = $pdo->prepare("SELECT * FROM user WHERE id = ?");
+            $stmt->execute([$data['user_id']]); // Utiliser un tableau pour les paramètres
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+        if ($user) {
+            // L'utilisateur a été trouvé
             // Exécuter la requête SQL pour supprimer un utilisateur
             $stmt = $pdo->prepare("DELETE FROM user WHERE id = ?");
             $stmt->execute([$data['user_id']]);
             // Renvoyer une réponse 204 No Content (pas de contenu car l'utilisateur est supprimé)
             http_response_code(204); // No Content
-
-
+        } else {
+            // L'utilisateur n'a pas été trouvé
+            http_response_code(404); // Not Found
+            echo json_encode(['error' => 'Utilisateur ' . $data['user_id'] . ' non trouvé']);
+        }
         } catch (PDOException $erreur) {
+            echo 'je suis dans le catch error';
             // En cas d'erreur de base de données
             http_response_code(500); // Internal Server Error
             echo json_encode(['error' => 'Erreur de base de données: ' . $erreur->getMessage()]);
