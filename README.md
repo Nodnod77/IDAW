@@ -1,71 +1,97 @@
-# IDAW
 
-# IDAW
+# API Web TP5 Exo 5 - Info
 
-TP5 - Info sur l'API web du TP5 exo 5
+Cette API Web permet de gérer des utilisateurs avec des opérations de base (CRUD), telles que l'affichage de tous les utilisateurs, l'affichage d'un utilisateur par ID, la création d'un nouvel utilisateur, la mise à jour d'un utilisateur et la suppression d'un utilisateur.
 
-Les requêtes possibles sont :
+## Requêtes Possibles
 
-1. Requête GET pour afficher tous les users :
-    paramètres : aucun
-    endpoint : http://localhost/IDAW/TP4/exo5/user.php
-   exemple de réponse (réponse en format JSON) Http OK 200:
+### 1. Afficher tous les utilisateurs
+
+- **Méthode HTTP**: GET
+- **Paramètres**: Aucun
+- **Endpoint**: (http://localhost/IDAW/TP4/exo5/user.php)
+- **Réponse Statut HTTP**: 200 HTTP OK
+- **Exemple de Réponse (JSON)**:
+   ```json
    [
-   {
-   "id": "20",
-   "name": "newnew_name",
-   "email": "new_email@new_email.com"
-   },
-   {
-   "id": "18",
-   "name": "nom2",
-   "email": "taah@ccc"
-   },
-   ] 
+       {
+           "id": "20",
+           "name": "newnew_name",
+           "email": "new_email@new_email.com"
+       },
+       {
+           "id": "18",
+           "name": "nom2",
+           "email": "taah@ccc"
+       }
+   ]
+   ```
 
-2. Requête GET pour afficher un user via son id :
-   paramètre : id 
-   endpoint : http://localhost/IDAW/TP4/exo5/user.php?id=20
-   exemple de réponse (réponse en format JSON) http OK 200:
-   {
-   "id": "20",
-   "name": "newnew_name",
-   "email": "new_email@new_email.com"
-   }
+### 2. Afficher un utilisateur par ID
 
-3. Requête POST pour crééer un nouveau user :
-    paramètres (sous format JSON): new_name, new_email 
- exemple :
-    {
-   "name": "!!!!!!!!!!!!!!!!!!!!!!!!!",
-   "email": "taah@ccc"
-   }
-    endpoint :http://localhost/IDAW/TP4/exo5/user.php
-    exemple de réponse (sous format JSON) :
+- **Méthode HTTP**: GET
+- **Paramètres**: `id`
+- **Endpoint**: (http://localhost/IDAW/TP4/exo5/user.php?id=20)
+- **Réponse Statut HTTP**: 200 HTTP OK
+- **Exemple de Réponse (JSON)**:
+   ```json
    {
-   "message": "Utilisateur créé avec succès"
+       "id": "20",
+       "name": "newnew_name",
+       "email": "new_email@new_email.com"
    }
+   ```
 
-4. requête PUT pour modifier un user :
-   paramètres (sous format JSON): user_id,new_name, new_email
-   exemple :
-   {
-    "user_id": 20
-   "name": "nameExemple!",
-   "email": "taah@ccc"
-   }
-   endpoint :http://localhost/IDAW/TP4/exo5/user.php
-   exemple de réponse (sous format JSON) :
-   {
-   "message": "Utilisateur 20 mis à jour avec succès"
-   }
+### 3. Créer un nouvel utilisateur
 
-5. requête DELETE pour supprimer un user :
-   paramètres (sous format JSON): user_id
-   exemple :
+- **Méthode HTTP**: POST
+- **Paramètres (format JSON)**:
+   ```json
    {
-   "user_id": 20
+       "name": "!!!!!!!!!!!!!!!!!!!!!!!!!",
+       "email": "taah@ccc"
    }
-   endpoint :http://localhost/IDAW/TP4/exo5/user.php
- réponse : 204 HHTP No content
-   
+   ```
+- **Endpoint**: (http://localhost/IDAW/TP4/exo5/user.php)
+- **Réponse Statut HTTP**: 201 HTTP CREATED
+- **Exemple de Réponse (JSON)**:
+   ```json
+   {
+       "message": "Utilisateur créé avec succès"
+   }
+   ```
+
+### 4. Mettre à jour un utilisateur
+
+- **Méthode HTTP**: PUT
+- **Paramètres (format JSON)**:
+   ```json
+   {
+       "user_id": 20,
+       "name": "nameExemple!",
+       "email": "taah@ccc"
+   }
+   ```
+- **Endpoint**: [http://localhost/IDAW/TP4/exo5/user.php](http://localhost/IDAW/TP4/exo5/user.php)
+- **Réponse Statut HTTP**: 200 HTTP OK
+- **Exemple de Réponse (JSON)**:
+   ```json
+   {
+       "message": "Utilisateur 20 mis à jour avec succès"
+   }
+   ```
+
+### 5. Supprimer un utilisateur
+
+- **Méthode HTTP**: DELETE
+- **Paramètres (format JSON)**:
+   ```json
+   {
+       "user_id": 20
+   }
+   ```
+- **Endpoint**: [http://localhost/IDAW/TP4/exo5/user.php](http://localhost/IDAW/TP4/exo5/user.php)
+- **Réponse Statut HTTP**: 204 HTTP No Content
+
+
+
