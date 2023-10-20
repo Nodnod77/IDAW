@@ -2,19 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="713c9094-7a36-46b0-a885-44e16898c42d" name="Changes" comment="Commit test">
-      <change afterPath="$PROJECT_DIR$/TP4/exo2/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo2/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo3/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo3/init_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo3/sql/create_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo3/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo4/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo4/init_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo4/sql/create_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP4/exo4/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/css/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/css/cv.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/css/hobbies.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/html/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/html/cv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/html/hobbies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/html/jscrud.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP5/v1/js/jscrud.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP3/SitePro_v4(withTwoTheme)/v4WithTwoTheme/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/SitePro_v4(withTwoTheme)/v4WithTwoTheme/php/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP3/SitePro_v4(withTwoTheme)/v4WithTwoTheme/php/template_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/TP3/SitePro_v4(withTwoTheme)/v4WithTwoTheme/php/template_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/dessinImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/dessinImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/imageKarate.png" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/imageKarate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/jeuVideoImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/jeuVideoImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/langueImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/langueImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/css/cv.css" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/css/cv.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/css/hobbies.css" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/css/hobbies.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/html/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/html/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/html/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/html/cv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/html/hobbies.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/html/hobbies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SitePro_v1/v1/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SitePro_v/v1/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP4/exo5/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/TP4/exo5/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +41,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -62,31 +75,44 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/wamp64/www/IDAW/TP4",
+    "last_opened_file_path": "C:/wamp64/www/IDAW",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IDAW" />
+      <recent name="C:\wamp64\www\IDAW\TP4\exo5" />
       <recent name="C:\wamp64\www\IDAW\TP4" />
       <recent name="C:\wamp64\www\IDAW\TP4\exo3" />
       <recent name="C:\wamp64\www\IDAW\SitePro_v3\v3\php" />
-      <recent name="C:\wamp64\www\IDAW\TP3" />
-      <recent name="C:\wamp64\www\IDAW" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\IDAW\TP5\v1\js" />
       <recent name="C:\wamp64\www\IDAW\TP4\exo3\sql" />
       <recent name="C:\wamp64\www\IDAW\SitePro_v3\v3\php\fr" />
       <recent name="C:\wamp64\www\IDAW\SitePro_v3\v3\php" />
       <recent name="C:\wamp64\www\IDAW\SitePro_v1" />
-      <recent name="C:\wamp64\www\IDAW\SitePro_v1\v1\html" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/IDAW/TP2_PHP/1erProgrammePHP/index.php" useBuiltInWebServerPort="true">
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="IDAW" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="IDAW" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -112,7 +138,13 @@
       <workItem from="1697178847222" duration="5961000" />
       <workItem from="1697303533495" duration="16150000" />
       <workItem from="1697403129026" duration="603000" />
-      <workItem from="1697439434384" duration="7765000" />
+      <workItem from="1697439434384" duration="8234000" />
+      <workItem from="1697457991073" duration="10671000" />
+      <workItem from="1697481628858" duration="140000" />
+      <workItem from="1697524604874" duration="7029000" />
+      <workItem from="1697611606415" duration="8964000" />
+      <workItem from="1697738474324" duration="331000" />
+      <workItem from="1697786754613" duration="5412000" />
     </task>
     <task id="LOCAL-00001" summary="Premier commit Hello World">
       <created>1696837348675</created>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <title>tabletest</title>
+  <style>
+    body{ margin-top: 5em; }
+    .table {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+<table class="table">
+  <thead> <!--définit un ensemble de lignes qui définit l'en-tête des colonnes d'un tableau.-->
+  <tr>
+    <th scope="col">Nom</th>
+    <th scope="col">Prenom</th>
+    <th scope="col">Date de naissance</th>
+    <th scope="col">Aime le cours Web</th>
+    <th scope="col">Remarques</th>
+    <th scope="col">CRUD</th>
+  </tr>
+  </thead>
+  <tbody id="studentsTableBody"> <!--permet de regrouper un ou plusieurs éléments <tr> afin de former le corps d'un tableau HTML-->
+
+  </tbody>
+</table>
+
+<form id="addStudentForm" action="" onsubmit="onFormSubmit();">
+
+  <div class="form-group row">
+    <label for="inputNom" class="col-sm-2 col-form-label">Nom*</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputNom" required>
+    </div>
+    <label for="inputPrenom" class="col-sm-2 col-form-label">Prenom*</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputPrenom" required>
+    </div>
+    <div class="dateDeNaissanceInput" style="display: flex;flex-direction: row; margin: 10px">
+      <label for="inputDateDeNaissance" class="col-sm-2 col-form-label">Date de naissance</label>
+      <div class="col-sm-3">
+        <input type="date" class="form-control" id="inputDateDeNaissance" >
+      </div>
+    </div>
+    <div class="dateDeNaissanceInput" style="display: flex;flex-direction: row;margin: 10px">
+      <label for="inputAdoreLeCours" class="col-sm-2 col-form-label">Adore le cours</label>
+      <div class="col-sm-3">
+        <input type="checkbox" class="form-control" id="inputAdoreLeCours" >
+      </div>
+    </div>
+    <div class="dateDeNaissanceInput" style="display: flex;flex-direction: row; margin: 10px">
+      <label for="inputRemarque" class="col-sm-2 col-form-label">Remarque</label>
+      <div class="col-sm-3">
+        <textarea class="form-control" id="inputRemarque"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <span class="col-sm-2"></span>
+    <div class="col-sm-2">
+      <button type="submit" class="btn btn-primary form-control">Submit</button>
+    </div>
+  </div>
+</form>
+<script type="text/javascript" src="../js/jscrud.js"> </script>
+</body>
+</html>
